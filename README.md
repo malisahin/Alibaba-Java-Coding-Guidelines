@@ -1,11 +1,11 @@
-## Table of Contents
+ ## Içindekiler
 
-* [Preface](#preface)
-* [1. Programming Specification](#1-programming-specification)
-   * [Naming Conventions](#naming-conventions)
-   * [Constant Conventions](#constant-conventions)
-   * [Formatting Style](#formatting-style)
-   * [OOP Rules](#oop-rules)
+* [Giriş](#preface)
+* [1. Programlama Özellikleri](#1-programming-specification)
+   * [Isimlendirme  Kuralları](#naming-conventions)
+   * [Constant Kuralları](#constant-conventions)
+   * [Yazı Format Stili](#formatting-style)
+   * [OOP Kuralları](#oop-rules)
    * [Collection](#collection)
    * [Concurrency](#concurrency)
    * [Flow Control Statements](#flow-control-statements)
@@ -25,8 +25,13 @@
    * [Server Specification](#server-specification)
 * [5. Security Specification](#5-security-specification)
 
-## Preface
+## Giriş
+
+Ali Baba Group'un teknik ekiplerinin en iyi programlama uygulamalarını birleştiren **Alibaba Java Kod Kılavuzunu** sunmaktan memnuniyet duyarız. Çok sayıda Java programlama takımı, birbirlerinin programlarını yeniden kullanabilmek ve daha iyi anlayabilmek için kod kalitesi ve standardı zorunlu hale geldi.Geçmişte bir çok  programlama problemi gördük. Örneğin, hatalı veritabanı tablo yapıları ve index tasarımları yazılım mimarisi kusurlarına neden olabilir. Başka bir örnek olarak, Kafa karıştırıcı kod yapıları sürdürülebilirliği zorlaştırır. Ayrıca güvenliği eksik kod, bilgisayar korsanlarının saldırılarına açıktır. Bu tür problemleri çözebilmek için, Ali baba içerisindeki geliştiricilere bu standartları belirledik. 
+
 We are pleased to present **Alibaba Java Coding Guidelines**, which consolidates the best programming practices from Alibaba Group's technical teams. A vast number of Java programming teams impose demanding requirements on code quality across projects as we encourage reuse and better understanding of each other's programs. We have seen many programming problems in the past. For example, defective database table structures and index designs may cause software architecture flaws and performance risks. As another example, confusing code structures make it difficult to maintain. Furthermore, vulnerable code without authentication is prone to hackers’ attacks. To address those kinds of problems, we developed this document for Java developers in Alibaba. 
+
+Bu döküman 5 bölümden oluşur. ***Programlama Kuralları***, ***Hata Yakalama ve Loglama***, ***MySQL Kuralları***, ***Proje Kuralları***, ve ***Güvenlik Kuralları*** 
 
 This document consists of five parts: ***Programming Specification***, ***Exception and Logs***, ***MySQL Specification***, ***Project Specification*** and ***Security Specification***. Based on the severity of the concerns, each specification is classified into three levels: ***Mandatory***, ***Recommended*** and ***Reference***. Further clarification is expressed in:  
  (1) "**Description**", which explains the content;  
