@@ -75,15 +75,22 @@ We will continue to collect feedback from the community to improve Alibaba Java 
 > <font color="#019858">Positive example: </font> MAX\_STOCK\_COUNT   
 > <font color="#FF4500">Counter example: </font> MAX\_COUNT   
 
-6\. **[Zorunlu]** Abstract class names must start with *Abstract* or *Base*. Exception class names must end with *Exception*. Test case names shall start with the class names to be tested and end with *Test*.
+6\. **[Zorunlu]** Abstract class'lar *Abstract* veya *Base* ile başlamalıdır. Exception class'ları *Exception* ile bitmelidir. Test durumları ise test edilecek class ile başlanmalı ve *Test* keyword'ü ile bitmelidir.
 6\. **[Zorunlu]** Abstract class names must start with *Abstract* or *Base*. Exception class names must end with *Exception*. Test case names shall start with the class names to be tested and end with *Test*.
 
+7\. **[Zorunlu]** Köşeli parantez Array tipini belirtir. Tanımlama şekli: *<font color="blue">String[]</font> args;*  
+> <font color="#FF4500">Counter example: </font>*String args[];*
 7\. **[Zorunlu]** Brackets are a part of an Array type. The definition could be: *<font color="blue">String[]</font> args;*  
 > <font color="#FF4500">Counter example: </font>*String args[];*
 
+
+8\. **[Zorunlu]** 'is' ön ekini boolean variable'larda eklemeyin. Bazı java frameworklerinde serialization hatasına sebep oluyor.
 8\. **[Zorunlu]** Do not add 'is' as prefix while defining Boolean variable, since it may cause a serialization exception in some Java frameworks.  
 > <font color="#FF4500">Counter example: </font>*boolean isSuccess;* The method name will be `isSuccess()` and then RPC framework will deduce the variable name as 'success', resulting in a serialization error since it cannot find the correct attribute.
 
+9\. **[Zorunlu]** Package isminin tamamı küçük harf olmalıdır.Kelimeler arasında nokta('.') konulabilir ve her nokta arasında yalnızca tek bir ingilizce kelime olmalıdır. Package names are always in <font color="blue">singular</font> format while class names can be in plural format if necessary.  
+> <font color="#019858">Positive example: </font> `com.alibaba.open.util` can be used as a package name for utils;
+`MessageUtils` can be used as a class name.
 9\. **[Zorunlu]** A package should be named in lowercase characters. There should be only one English word after each dot. Package names are always in <font color="blue">singular</font> format while class names can be in plural format if necessary.  
 > <font color="#019858">Positive example: </font> `com.alibaba.open.util` can be used as a package name for utils;
 `MessageUtils` can be used as a class name.
